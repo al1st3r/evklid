@@ -1,0 +1,116 @@
+// main: styles.less
+
+.how__heading {
+    font-size: 48px;
+     line-height: 59px;
+     font-weight: 600;
+     margin: 100px 0 50px 0;
+}
+
+.tabs {
+
+    &__btn_first{
+        // position: absolute;
+        bottom: 0;
+    }
+
+    &__btn_secondary {
+        background: #fff;
+        outline: 1px solid #333333;
+        color: @black;
+        margin-left: 30px;
+        // position: absolute;
+        bottom: 0;
+        left: 200px;
+
+        &:hover,
+        &:focus {
+            background: @gray;
+            color: #fff;
+        }
+        
+        &:active {
+            background: #000;
+            color: #fff;
+        }
+    }
+
+    &__container {
+        max-width: 758px; 
+        position: relative;
+        flex-basis: 50%;
+    }
+
+    &__heading {
+        margin: 0 0 8px 0;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    &__description {
+        line-height: 32px;
+    }
+
+    &__image {
+        height: auto;
+        max-width: 870px;
+        background-size: cover;
+        width: 100%;
+        flex-basis: 50%;
+        margin-left: 20px;
+        
+    }
+
+    &__image-1 {
+        background: url(/images/howimage1.png) center no-repeat #fff;
+        background-size: cover;
+    }
+    &__image-2 {
+        background: url(/images/howimage2.png) center no-repeat #fff;
+        background-size: cover;
+    }
+    &__image-3 {
+        background: url(/images/howimage3.png) center no-repeat #fff;
+        background-size: cover;
+    }
+}
+
+#tabs {
+	margin: 10px 0;
+}
+.tabs-nav {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+    margin-bottom: 45px;
+}
+.tabs-nav li {
+	display: block;
+	float: left;
+	padding: 0;
+	list-style: none;
+}    
+.tabs-nav a {
+	display: block;
+	margin-right: 85px;
+	font-size: 16px;
+	text-decoration: none;
+	text-align: center;
+    color: @black;
+
+}		    
+
+.tabs-nav a.active {
+	background: #fff;
+	color: @darkorange;
+}    
+.tabs-items {
+	background: #fff;
+	margin: -1px 0 0 0;
+}
+.tabs-item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}

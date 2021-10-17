@@ -1,0 +1,41 @@
+// compress: true, sourceMap: true
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+@import "_vars";
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333333;
+};
+
+
+
+.wrapper {
+    max-width: 1770px;
+    margin: 0 75px;
+
+    @media @breakpoint-laptop {
+        margin: 0 50px;
+    }
+}
+
+// .logo {
+//         width: 50%;
+//         height: 72px;
+//         background: url(/images/logo.svg) no-repeat ;
+//     }
+
+@import "_header";
+@import "_hero";
+@import "_btn";
+@import "_about";
+@import "_how";
+@import "_faq";
+@import "_footer";

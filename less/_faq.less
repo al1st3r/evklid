@@ -1,0 +1,117 @@
+// main: styles.less
+
+.faq {
+
+    margin-top: 100px;
+
+    &__question {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    &__heading {
+        border-bottom: 1px solid #CACACA;
+        padding-bottom: 32px;
+        font-weight: 400;
+        font-size: 48px;
+    }
+}
+
+.container{
+    width: 100%;
+  }
+  
+  .accordion-item{
+    background-color: #fff;
+    border-radius: .4rem;
+  }
+  
+  .accordion-item hr{
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  
+  .accordion-link{
+    font-size: 1.6rem;
+    color: @black;
+    text-decoration: none;
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    // border-top: 1px solid#CACACA;
+    // border-bottom: 1px solid #CACACA;
+  }
+
+  
+  
+  .accordion-link i{
+    color: #e7d5ff;
+    padding: .5rem;
+    
+  }
+  
+  .accordion-link ul{
+    display:flex;
+    align-items: flex-end;
+    list-style-type: none;
+  }
+  
+  .accordion-link li{
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.4);
+  }
+  
+  .accordion-link div{
+    display: flex;
+  }
+  
+  .accordion-link .ion-md-arrow-down{
+    display: none;
+  }
+  
+  .answer{
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+    transition-property: max-height;
+    transition-duration: 0.65s;
+    transition-timing-function: linear;
+  }
+  
+  
+  
+  .answer p{
+    color: @black;
+    font-size: 16px;
+    line-height: 32px;
+  }
+  
+  .accordion-item:target .answer{
+    max-height: 20rem;
+  }
+  
+  .accordion-item:target .accordion-link .ion-md-arrow-forward{
+    display: none;
+    background: url(/images/accordionbutton.svg);
+  }
+  
+  .accordion-item:target .accordion-link .ion-md-arrow-down{
+    display: block;
+    background: url(/images/accordionbuttonopened.svg);
+
+  }
+
+  .icon {
+      background: url(/images/accordionbutton.svg);
+      width: 50px;
+      height: 50px;
+      transition: background 0.3s linear;
+
+      &:hover{
+        background: url(/images/accordionbuttonhover.svg);
+      }
+  }
